@@ -3,9 +3,15 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
-
+\usepackage{amsthm}
+\usepackage{graphicx}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+ 
 \title{Braid Cryptosystem Notes}
 \date{\today}
+
+
 
 \begin{document}
 	\maketitle
@@ -16,7 +22,30 @@
 	%TODO: who created braids and operations on braids
 	In this section we will explain the mathematics behind a braid group. A braid group has braids as the set and concatenation as the group operation written as $<B_n,||>$ where $n$ is the number of strands and 
 
-	$B_n=<\sigma_1,...,\sigma_{n-1} | >$ 
+\begin{definition} 
+$B_n=\{\sigma_1,...,\sigma_{n-1}:\sigma_i\sigma_j\sigma_i=\sigma_j\sigma_i\sigma_j\ \textrm{if}\ |i-j|=1\ \textrm{and}\ \sigma_i\sigma_j=\sigma_j\sigma_i\ \textrm{if}\ |i-j|>1\}$
+\end{definition}
+ 
+A braid group is infinite and nonabelian meaning that the elements do not commute such that:
+$a,b \in B_n: \ ab\neq ba$. Note that for $n$ strands there are $n-1$ generators represented by $\sigma$. A braid is the concatenation of generators. A positive generator, $\sigma_i^+$, corresponds to crossing left over right and a negative generator corresponds to crossing right over left, $\sigma_i^-$. 
+
+\begin{figure}[hbp!]
+\centering
+  \includegraphics[width=0.2\linewidth]{./Pictures/gen_pos_neg.png}
+  \caption{$\sigma_i^+$,$\sigma_i^-$}\label{fig:graph}
+\end{figure}
+
+
+For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^-$ is the following:
+	
+	\begin{figure}[hbp!]
+\centering
+  \includegraphics[width=0.2\linewidth]{./Pictures/example_braid.png}
+\end{figure}
+	
+	
+	
+	
 	
 	
 	\subsubsection{Left and Right Canonical Forms}
