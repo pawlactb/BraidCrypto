@@ -99,7 +99,35 @@ We know use the fact by definition of a braid group that generators commute if a
 This takes advantage of the fact that we commute $a$ and $b$ which results in the following: $abxb^{-1}a^{-1}=baxa^{-1}b^{-1}$ so both Alice and Bob can decode the message. This problem is used for the key agreement between Alice and Bob.
 
 \section{Braid Diffie-Hellman Key Agreement}
-First we will discuss the traditional Diffie-Hellman protocol on El-Gamal then look at the key agreement for the braid version Diffie-Hellman. 
+First we will discuss the traditional Diffie-Hellman protocol on El-Gamal then look at the key agreement for the braid version Diffie-Hellman. For the traditional Diffie-Hellman agreement the secret keys are $(a,b,g^{ab} \text{mod }p=g^{ab} \text{mod }p)$, and the public keys are $(p,g,g^a \text{mod }p,g^b \text{mod }p)$. 
+
+\begin{definition}
+$p \text{ is a prime. } g \text{ is a }\textit{primitive root } \text{of }p \text{ where }g^{p-1}\equiv 1 \text{ mod }p. $
+\end{definition}
+
+The next step in the Diffie-Hellman key exchange is for Alice and Bob to select their own keys $a,b \in \mathbb{Z}_p$  secretly and then they send $g^a \text{mod }p$ and $g^b \text{mod }p$ publicly. Then Alice and Bob exponentiate the public keys with their own secret key to obtain the same value. This is dependent on the fact that $ab=ba,  \forall a,b \in \mathbb{Z}_p$. By defining the commuting subgroups of a braid we have the tools needed to define a braid Diffie-Hellman key exchange. 
+\\ \\
+\textbf{Braid Diffie-Hellman key agreement system.}
+\begin{enumerate}
+
+\item \textbf{Preparation Step:} $l=\mid LB_n \mid$ and $r=\mid UB_n \mid$. Pick sufficiently complicated braid such that $x \in B_{l+r}$ which is broadcasted on a public channel. 
+
+\item \textbf{Key Agreement:} 
+	 \begin{enumerate}
+	 	\item Alice chooses a random secret braid $a \in LB_n$ and sends $y_1=axa^{-1}$ to Bob.
+		\item Bob chooses a random secret braid $b \in UB_n$ and sends $y_2=bxb^{-1}$ to Alice.
+		\item Alice receives $y_2$ and computes the shared key $K=ay_2a^{-1}=abxb^{-1}a^{-1}$.
+		\item Bob receives $y_1$ and computes the shared key $K=by_1b^{-1}=baxa^{-1}b^{-1}$.
+	 \end{enumerate}
+\item Therefore since for $a \in LB_n$ and $b \in UB_n$, $ab=ba$. Then
+\begin{centering}
+$ay_2a^{-1}=a(bxb^{-1})a^{-1}=b(axa^{-1})b^{-1}=by_1b^{-1}$. This implies that Alice and Bob both have the same shared braid.
+\end{centering}
+\end{enumerate}
+
+
+
+
 
 \begin{thebibliography}{9}
 
@@ -112,7 +140,16 @@ March 7, 2006.
 Ki Hyoung Ko, Sang Jin Lee, Jung Hee Cheon, Jae Woo Han, Ju-sung Kang, Choonsik Park.
 \textit{New Public-key Cryptosystem Using Braid Groups}.
 Korea Advanced Institute of Science and Technology, Brown University, Electronics and Telecommunications Research Institute. 
+
+\bibitem{braid_group_crypto}
+David Garber.
+\textit{Braid Group Cryptography}.
+Department of Applied Mathematics, Holon Institute of Technology. 
  
+ \bibitem{new_directions}
+Whitfield Diffie, Martin Hellman. (November 1976)
+\textit{New Directions in Cryptography}.
+IEEE Transactions on Information Theory.
 \end{thebibliography}
 
 
