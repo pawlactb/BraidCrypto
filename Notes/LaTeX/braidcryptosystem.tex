@@ -8,7 +8,17 @@
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
  
-\title{Braid Cryptosystem Notes}
+\title{Braid Group Cryptography}
+\author{
+  Madsen, Reese\\
+  \texttt{madsenar@clarkson.edu}
+  \and
+  Pawlaczyk, Tyler\\
+  \texttt{pawlactb@clarkson.edu}
+   \and
+  Klee, Bryan\\
+  \texttt{kleebm@clarkson.edu}
+}
 \date{\today}
 
 
@@ -16,9 +26,9 @@
 \begin{document}
 	\maketitle
 	
-	\section{Braid Cryptographic System}
 	
-	\subsection{Braids}
+	
+	\section{Braids}
 	%TODO: who created braids and operations on braids
 	In this section we will explain the mathematics behind a braid group. A braid group has braids as the set and concatenation as the group operation written as $<B_n,||>$ where $n$ is the number of strands and 
 
@@ -44,19 +54,21 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 \end{figure}
 	
 	
-\subsection{Braids as Permutations}
-	There is no unique way to write a braid as a concatenation of generators. There is no unique form because you can simply use the rules of the braid group to switch generators around. Therefore there is a connect defined between braid groups and permutation groups so that we can define a uniqueness.  
-	\subsubsection{Left and Right Canonical Forms}
+\section{Braids as Permutations}
+	There is no unique way to write a braid as a concatenation of generators. There is no unique form because you can simply use the rules of the braid group to switch generators around. Therefore there is a connection defined between braid groups and permutation groups so that we can define a uniqueness. There exists a endomorphism:
+	$ \phi: B_n \rightarrow \Sigma_n$.
+	$\sigma_i $ represents the switch of the i-th strand with the (i+1) strand. 
+	Denote the permutation by $\pi \in \Sigma_n, \pi(i)=b_i$. The trick is to then draw straight lines for the permutations on the braid diagram. For example the permutation $\pi=(1 2 3 4)\rightarrow(4 2 1 3)$ maps the 1st strand to the 4th strand and so forth. This corresponds to the following braid $A=\sigma_1 \sigma_2 \sigma_1 \sigma_3$. The fundamental braid $\Delta_n=(\sigma_1...\sigma_{n-1})(\sigma_1 ... \sigma_{n-2})...\sigma_1 $ corresponds to the permutation $\Omega_n=n(n-1),...,(2)(1)=n!$. Now we can define the left canonical form which is used for a unique representation on braids to be utilized in the crypto system.
 	
+	\begin{definition}	
 	For any $w \in B_n$ $\exists$ a unique representation called the left canonical form.
+	\\$w = \Delta^u A_1 A_2 ... A_l, u \in Z', A \in \Sigma_n \backslash \{ e, \Delta \} $
+	$\text{where } A_i A_{i+1} \text{is left weighted for } 1 \leq i \leq l - 1.$
+	\end{definition}
 	
-	\begin{align*}
-		&w = \Delta^u A_1 A_2 ... A_l, u \in Z', A \in \Sigma_n \text{ without the following elements } \{ e, \Delta \} \\
-		&\text{where } A_i A_{i+1} \text{is left weighted for } 1 \leq i \leq l - 1 \\
-		&\text{where } \Sigma_n \text{ is the set of all permutation braids.}
-	\end{align*}
-	
-	\subsection{Hard problem associated with braids.}
+	The braids for the crypto system are all in left canonical form for the remainder of the paper. 
+	 
+	\section{Hard problem associated with braids.}
 	As we have seen in RSA and El-Gamal there are associated hard problems with these crypto systems. For RSA there is the factoring problem where for:
 	
 	\begin{itemize}
@@ -81,10 +93,16 @@ $LB_n,UB_n < B_n. \\ LB_n=\{ \sigma_1,...,\sigma_{[n/2]-1}  \}, UB_n=\{ \sigma_{
 \end{definition}
 
 We know use the fact by definition of a braid group that generators commute if and only if the generators do not share a common strand. Since the $\sigma_{n/2}$ generator is missing, elements in each subgroup will commute with each other such that: $a \in LB_n, b \in UB_n, ab=ba$. We can know look at the Diffie-Hellman generalized conjugacy search problem.
-\\ \\
-\noindent \textbf{Diffie-Hellman type Generalized Conjugacy Search Problem:} \\ $\textbf{Given }x,y_A, y_B \in B_n \text{ such that }y_A=axa^{-1} \text{ and } y_B=bxb^{-1} \text{ for some }a \in LB_n \text{ and }b \in UB_n. \\ \textbf{Find }by_Ab^{-1}=ay_Ba^{-1}=abxb^{-1}a^{-1}$
 
-This takes advantage of the fact that we commute $a$ and $b$ which results in the following: $abxb^{-1}a^{-1}=baxa^{-1}b^{-1}$ so both Alice and Bob can decode the message. 
+\textbf{Diffie-Hellman type Generalized Conjugacy Search Problem:} \\ $\textbf{Given }x,y_A, y_B \in B_n \text{ such that }y_A=axa^{-1} \text{ and } y_B=bxb^{-1} \text{ for some }a \in LB_n \text{ and }b \in UB_n. \\ \textbf{Find }by_Ab^{-1}=ay_Ba^{-1}=abxb^{-1}a^{-1}$
+
+This takes advantage of the fact that we commute $a$ and $b$ which results in the following: $abxb^{-1}a^{-1}=baxa^{-1}b^{-1}$ so both Alice and Bob can decode the message. This problem is used for the key agreement between Alice and Bob.
+
+\section{Braid Diffie-Hellman Key Agreement}
+First we will discuss the traditional Diffie-Hellman protocol then look at the key agreement for the braid Diffie-Hellman.
+
+
+
 
 	
 \end{document}
