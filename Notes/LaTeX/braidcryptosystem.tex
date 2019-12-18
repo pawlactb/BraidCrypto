@@ -21,15 +21,14 @@
 }
 \date{\today}
 
-
-
 \begin{document}
 	\maketitle
 	
-	
+	\begin{abstract}
+	\textbf{Write abstract after paper is done.}
+	\end{abstract}
 	
 	\section{Braids}
-	%TODO: who created braids and operations on braids
 	In this section we will explain the mathematics behind a braid group. A braid group has braids as the set and concatenation as the group operation written as $<B_n,||>$ where $n$ is the number of strands and 
 
 \begin{definition} 
@@ -98,6 +97,9 @@ We know use the fact by definition of a braid group that generators commute if a
 
 This takes advantage of the fact that we commute $a$ and $b$ which results in the following: $abxb^{-1}a^{-1}=baxa^{-1}b^{-1}$ so both Alice and Bob can decode the message. This problem is used for the key agreement between Alice and Bob.
 
+\section{Background Info and Literature}
+\textbf{Include information on what has been done.}
+
 \section{Braid Diffie-Hellman Key Agreement}
 First we will discuss the traditional Diffie-Hellman protocol on El-Gamal then look at the key agreement for the braid version Diffie-Hellman. For the traditional Diffie-Hellman agreement the secret keys are $(a,b,g^{ab} \text{mod }p=g^{ab} \text{mod }p)$, and the public keys are $(p,g,g^a \text{mod }p,g^b \text{mod }p)$. 
 
@@ -125,8 +127,17 @@ $ay_2a^{-1}=a(bxb^{-1})a^{-1}=b(axa^{-1})b^{-1}=by_1b^{-1}$. This implies that A
 \end{centering}
 \end{enumerate}
 
+\section{Future Direction and New Ideas}
+In the braids as permutation section we mentioned that we can represent the generators of a braid as a permutation group. What about other ways to represent a braid concisely? It turns out that you can also represent generators as matrices in Dynnikov coordinates. The Dynnikov coordinate space is $C_n=\mathbb{R}^{2n-4} \backslash \{0\}$ where $n$ is the number of strands. The idea is to represent generators by looking at how the action of the generator stretches or rotates a given vector. Therefore you can represent each generator by a matrix. \\ For $n=3$, the possible generators are $\sigma_1^+, \sigma_1^-, \sigma_2^+, \sigma_2^-$. 
+For the generator $\sigma_1^+ (a,b)=
+\begin{bmatrix}
+1 & 0\\
+-1 & 1
+\end{bmatrix} 
+\text{when }0<a<b $.
+Notice how the input vector is in $\mathbb{R}^2$ such that $j=\begin{bmatrix} a\\b \end{bmatrix} \in \mathbb{R}^{2n-4} = \mathbb{R}^{2(3)-4}$.
 
-
+Since we can represent generators as matrices we can use this to our advantage due to the fact that computers work with arrays and matrices well! This is a proposed alternative method to representing braids as permutation groups. Using results in linear algebra perhaps a more efficient system may be worth trying. 
 
 
 \begin{thebibliography}{9}
