@@ -93,13 +93,29 @@ $LB_n,UB_n < B_n. \\ LB_n=\{ \sigma_1,...,\sigma_{[n/2]-1}  \}, UB_n=\{ \sigma_{
 \end{definition}
 
 We know use the fact by definition of a braid group that generators commute if and only if the generators do not share a common strand. Since the $\sigma_{n/2}$ generator is missing, elements in each subgroup will commute with each other such that: $a \in LB_n, b \in UB_n, ab=ba$. We can know look at the Diffie-Hellman generalized conjugacy search problem.
-
+\\ \\
 \textbf{Diffie-Hellman type Generalized Conjugacy Search Problem:} \\ $\textbf{Given }x,y_A, y_B \in B_n \text{ such that }y_A=axa^{-1} \text{ and } y_B=bxb^{-1} \text{ for some }a \in LB_n \text{ and }b \in UB_n. \\ \textbf{Find }by_Ab^{-1}=ay_Ba^{-1}=abxb^{-1}a^{-1}$
 
 This takes advantage of the fact that we commute $a$ and $b$ which results in the following: $abxb^{-1}a^{-1}=baxa^{-1}b^{-1}$ so both Alice and Bob can decode the message. This problem is used for the key agreement between Alice and Bob.
 
 \section{Braid Diffie-Hellman Key Agreement}
-First we will discuss the traditional Diffie-Hellman protocol then look at the key agreement for the braid Diffie-Hellman.
+First we will discuss the traditional Diffie-Hellman protocol on El-Gamal then look at the key agreement for the braid version Diffie-Hellman. 
+
+\begin{thebibliography}{9}
+
+\bibitem{braid_groups_intro} 
+Parvez Anandam. 
+\textit{Introduction to Braid Group Cryptography}. 
+March 7, 2006.
+ 
+\bibitem{new_public_crypto} 
+Ki Hyoung Ko, Sang Jin Lee, Jung Hee Cheon, Jae Woo Han, Ju-sung Kang, Choonsik Park.
+\textit{New Public-key Cryptosystem Using Braid Groups}.
+Korea Advanced Institute of Science and Technology, Brown University, Electronics and Telecommunications Research Institute. 
+ 
+\end{thebibliography}
+
+
 
 
 
