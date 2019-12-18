@@ -21,13 +21,15 @@
 }
 \date{\today}
 
+
 \begin{document}
+
 	\maketitle
-	
+
 	\begin{abstract}
 	\textbf{Write abstract after paper is done.}
 	\end{abstract}
-	
+	\newpage
 	\section{Braids}
 	In this section we will explain the mathematics behind a braid group. A braid group has braids as the set and concatenation as the group operation written as $<B_n,||>$ where $n$ is the number of strands and 
 
@@ -98,7 +100,7 @@ We know use the fact by definition of a braid group that generators commute if a
 This takes advantage of the fact that we commute $a$ and $b$ which results in the following: $abxb^{-1}a^{-1}=baxa^{-1}b^{-1}$ so both Alice and Bob can decode the message. This problem is used for the key agreement between Alice and Bob.
 
 \section{Background Info and Literature}
-\textbf{Include information on what has been done.}
+\textbf{Include information on what has been done. Talk about state of the art new ideas in braid group cryptography.}
 
 \section{Braid Diffie-Hellman Key Agreement}
 First we will discuss the traditional Diffie-Hellman protocol on El-Gamal then look at the key agreement for the braid version Diffie-Hellman. For the traditional Diffie-Hellman agreement the secret keys are $(a,b,g^{ab} \text{mod }p=g^{ab} \text{mod }p)$, and the public keys are $(p,g,g^a \text{mod }p,g^b \text{mod }p)$. 
@@ -161,7 +163,13 @@ Department of Applied Mathematics, Holon Institute of Technology.
 Whitfield Diffie, Martin Hellman. (November 1976)
 \textit{New Directions in Cryptography}.
 IEEE Transactions on Information Theory.
+
+
+\bibitem{dynn_coordinates}
+Toby Hall, S. Oyku Yurttas.
+\textit{On the Topological Entropy of Families of Braids}.
 \end{thebibliography}
+
 
 
 
