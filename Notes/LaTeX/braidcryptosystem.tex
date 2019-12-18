@@ -46,8 +46,6 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 	
 	
 	
-	
-	
 	\subsubsection{Left and Right Canonical Forms}
 	
 	For any $w \in B_n$ $\exists$ a unique representation called the left canonical form.
@@ -58,7 +56,26 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 		&\text{where } \Sigma_n \text{ is the set of all permutation braids.}
 	\end{align*}
 	
-	\subsection{Sub-Groups of the Braid Group}
+	\subsection{Hard problem associated with braids.}
+	As we have seen in RSA and El-Gamal there are associated hard problems with these crypto systems. For RSA there is the factoring problem where for:
+	
+	\begin{itemize}
+		\item p,q \text{are $2$ distinct k-bit primes.}
+		\item n=pq 
+		\item \text{Multiplying is computationally easy while the inverse function, factoring, is computationally hard.} 
+	\end{itemize}
+
+Similarly El-Gamal has the discrete logarithm which is the associated computationally hard problem. 
+For braid group cryptography there are several computationally hard problems. One in particular that is widely used is the conjugacy search problem. Conjugacy is defined as:
+\begin{definition} 
+$G-\text{group. } a,x,y \in G. \text{ If }y=axa^{-1},\text{ then }y \text{ is } conjugate \text{ to }x \text{ via }a.$
+
+\end{definition}
+
+	
+	
+	
+	\subsubsection{Sub-Groups of the Braid Group}
 	There are two commuting subgroups of $B_n$.
 	
 	\begin{align*}
