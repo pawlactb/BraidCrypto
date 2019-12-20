@@ -43,7 +43,7 @@ $a,b \in B_n: \ ab\neq ba$. Note that for $n$ strands there are $n-1$ generators
 
 \begin{figure}[hbp!]
 \centering
-  \includegraphics[width=0.2\linewidth]{./Pictures/gen_pos_neg.png}
+  %\includegraphics[width=0.2\linewidth]{./Pictures/gen_pos_neg.png}
   \caption{$\sigma_i^+$,$\sigma_i^-$}\label{fig:graph}
 \end{figure}
 
@@ -54,7 +54,7 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 	
 	\begin{figure}[hbp!]
 \centering
-  \includegraphics[width=0.2\linewidth]{./Pictures/example_braid.png}
+  %\includegraphics[width=0.2\linewidth]{./Pictures/example_braid.png}
 \end{figure}
 	
 	
@@ -70,7 +70,32 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 	$\text{where } A_i A_{i+1} \text{is left weighted for } 1 \leq i \leq l - 1.$
 	\end{definition}
 	
-	The braids for the crypto system are all in left canonical form for the remainder of the paper. 
+	The braids for the crypto system are all in left canonical form for the remainder of the paper. To implement this in a cryptosystem we need a fast algorithm to compute the left canonical form of any braid group. The algorithm for finding the left canonical form is similar to the bubble sort algorithm as its complexities are $\mathcal{O}(l^2 n log{}n)$ and $\mathcal{O}(l^2 n)$ in the Artin and band-generator presentations, respectively. The difference between the two is found in the complexity of the meet operation. The algorithm for left canonical form is as follows:
+	\\
+	\\ Algorithim: Convert a braid into the left canonical form
+	\\
+	\\ \indent Input: A braid representation $\beta = (p, (A_i))$
+	\\ \indent Output: The left canonical form of $\beta$
+	\\
+	\\ \indent $\ell \leftarrow \ell(\beta)$
+	\\ \indent $i \leftarrow 1$;
+	\\ \indent while ($i < \ell$)
+	\\ \indent \indent $t \leftarrow \ell$
+	\\ \indent  \indent for $ j \leftarrow \ell - 1$ to $i$ do begin:
+	\\ \indent \indent \indent B $\leftarrow$ $(DA_j^{-1})$ $A_j+1$
+	\\ \indent \indent \indent if (B is nontrivial) then begin
+	\\ \indent \indent \indent \indent $t \leftarrow j$; $A_j \leftarrow A_j B; A_j+1 \leftarrow B^{-1} A_j+1$
+	\\\indent \indent \indent end
+	\\\indent \indent end
+	\\ \indent $i \leftarrow t + 1$;
+	\\ \indent end
+	\\ \indent while ($\ell > 0) \land (A_1 = D)$ do begin:
+	\\  \indent \indent Remove $A_1$ from $\beta$; $\ell \leftarrow \ell -1$;$p \leftarrow p +1$;
+	\\ \indent end
+	\\ \indent while ($\ell > 0) \land (A_\ell$ is trivial) do begin:
+	\\ \indent \indent Remove $A_\ell$ from $\beta$; $\ell \leftarrow \ell -1$
+	\\ \indent end
+	
 	 
 	\section{Hard problem associated with braids.}
 	As we have seen in RSA and El-Gamal there are associated hard problems with these crypto systems. For RSA there is the factoring problem where for:
