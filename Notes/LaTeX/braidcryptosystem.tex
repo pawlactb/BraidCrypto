@@ -5,6 +5,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{graphicx}
+\usepackage{listing}
 \usepackage{geometry}
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
@@ -47,8 +48,21 @@ $a,b \in B_n: \ ab\neq ba$. Note that for $n$ strands there are $n-1$ generators
   \caption{$\sigma_i^+$,$\sigma_i^-$}\label{fig:graph}
 \end{figure}
 
-\textbf{Include pictures of braids}
+The first rule for braid groups written in the definition states that you are allowed to swap the generators as long as the distance between the generators is one lane apart. The second rule states that as long as the generators do not share a common strand you are allowed to commute them. These can be visualized below:
 
+\begin{figure}[hbp!]
+\centering
+  \includegraphics[width=0.2\linewidth]{./Pictures/crisscross_1.png}
+   \includegraphics[width=0.2\linewidth]{./Pictures/crisscross_2.png}
+  \caption{$\sigma_1\sigma_2\sigma_1=\sigma_2\sigma_1\sigma_2\ \textrm{if}\ |2-1|=1$}\label{fig:graph}
+\end{figure}
+
+\begin{figure}[hbp!]
+\centering
+  \includegraphics[width=0.2\linewidth]{./Pictures/commute_1.png}
+  \includegraphics[width=0.2\linewidth]{./Pictures/commute_2.png}
+  \caption{$\sigma_1\sigma_3=\sigma_3\sigma_1\ \textrm{if}\ |3-1|>1$}\label{fig:graph}
+\end{figure}
 
 For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^-$ is the following:
 	
@@ -114,7 +128,7 @@ $G-\text{group. } a,x,y \in G. \text{ If }y=axa^{-1},\text{ then }y \text{ is } 
 
 \noindent \textbf{Conjugacy Search Problem:} \\ $\textbf{Given }x,y \in B_n \text{ such that }y=axa^{-1} \text{ for some }a \in B_n. \\ \textbf{Find }b \in B_n \text{ such that }y=b^{-1}xb.$
 \\ \\
-There are several types of conjugacy search problems and one we will focus on is the Diffie-Hellman type generalized conjugacy search problem. First we need to define $2$ commuting subgroups of $B_n$. 
+In Matlab there is a library called Braidlab that utilizes braids and can compute various functions on braids and generators. To represent braids in Matlab a braid $b=\sigma_1^+\sigma_2^-$ would be written as $b=[1 -2]$. Conjugacy is defined as a method for braids called \textbf{conjtest}. The inputs for conjtest are two braids. The method returns true if the braids are conjugate as well as providing the conjugating braid. There are several types of conjugacy search problems and one we will focus on is the Diffie-Hellman type generalized conjugacy search problem. First we need to define $2$ commuting subgroups of $B_n$. 
 
 
 \begin{definition}
@@ -161,6 +175,7 @@ $ay_2a^{-1}=a(bxb^{-1})a^{-1}=b(axa^{-1})b^{-1}=by_1b^{-1}$. This implies that A
 
 
 \section{Future Direction and New Ideas}
+
 In the braids as permutation section we mentioned that we can represent the generators of a braid as a permutation group. What about other ways to represent a braid concisely? It turns out that you can also represent generators as matrices using Dynnikov coordinates and the max-plus semiring. The Dynnikov coordinate space is $C_n=\mathbb{R}^{2n-4} \backslash \{0\}$ where $n$ is the number of strands. The idea is to represent generators by looking at how the action of the generator stretches or rotates a given vector. Therefore you can represent each generator by a matrix. This calculation is done using the max-plus semiring. We use this semiring due to the fact that it helps with computation and notation. 
 
 \begin{definition}
@@ -174,6 +189,9 @@ $[a+b]=\text{max}(a,b), [ab]=a+b, [a/b]=a-b, \text{ and } [1]=0. \\ \\ a'=[\frac
 1 & 0\\
 -1 & 1
 \end{bmatrix} $. We want to compare the $a$ and $b$ and obtain different matrices for several cases. Since we can represent generators as matrices we can use this to our advantage due to the fact that computers work with arrays and matrices well! This is a proposed alternative method to representing braids as permutation groups. Using results in linear algebra perhaps a more efficient system may be worth trying. 
+
+The creation of braids in the crypto system is dependent on generating random braids. This is done by generating random permutations of the braids then turning them into left canonical form so that the braids are unique. The random generation is done by using an oracle which helps with decision making. Here we propose a new method of generating random braids using brownian motion. Brownian motion is defined as the way particles move and bump against each other in a fluid. This movement is stochastic which can help us in generating random braids. The way to represent brownian motion is by using differential equations. Here is the stochastic differential equation: $dX_t=F(t,X_t) dt+G(t,X_t) dW_t$ where $F$ is the vector of drifting rates, $G$ is the matrix of volatility rates, $t$ is time, $X_t$ is the state vector, and $dW_t$ is the vector of possible correlated drift and volatility rates. The trajectories in the braid will follow this random walk and then cross depending on how stochastic the movement is. For example if the volatility rates were very low then the trajectories would not move around each other very much which would result in not many crossings of the trajectories. Therefore choosing the drift and volatility rates are very important to be able to obtain a significant braid. Once a sufficient braid is obtained from these random trajectories, the braid will be inherently random due to the fact that brownian motion is stochastic. After the random braids are obtained they can be changed into left canonical form which would be used for the cryptosystem. 
+
 
 
 \begin{thebibliography}{9}
@@ -207,6 +225,9 @@ Toby Hall, S. Oyku Yurttas.
 Jae Choon Cha, Ki Hyoung Ko, Sang Jin Lee, Jung Hee Cheon, Jae Woo Han.
 \textit{An Efficient Implementation of Braid Groups}.
 
+\bibitem{braidlab}
+Jean-Luc Thiffeault, Marko Budisic.
+\textit{Braidlab: A Software Package for Braids and Loops}.
 
 \end{thebibliography}
 
