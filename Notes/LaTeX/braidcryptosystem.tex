@@ -130,16 +130,19 @@ $ay_2a^{-1}=a(bxb^{-1})a^{-1}=b(axa^{-1})b^{-1}=by_1b^{-1}$. This implies that A
 \end{enumerate}
 
 \section{Future Direction and New Ideas}
-In the braids as permutation section we mentioned that we can represent the generators of a braid as a permutation group. What about other ways to represent a braid concisely? It turns out that you can also represent generators as matrices in Dynnikov coordinates. The Dynnikov coordinate space is $C_n=\mathbb{R}^{2n-4} \backslash \{0\}$ where $n$ is the number of strands. The idea is to represent generators by looking at how the action of the generator stretches or rotates a given vector. Therefore you can represent each generator by a matrix. \\ For $n=3$, the possible generators are $\sigma_1^+, \sigma_1^-, \sigma_2^+, \sigma_2^-$. 
-For the generator $\sigma_1^+ (a,b)=
+In the braids as permutation section we mentioned that we can represent the generators of a braid as a permutation group. What about other ways to represent a braid concisely? It turns out that you can also represent generators as matrices using Dynnikov coordinates and the max-plus semiring. The Dynnikov coordinate space is $C_n=\mathbb{R}^{2n-4} \backslash \{0\}$ where $n$ is the number of strands. The idea is to represent generators by looking at how the action of the generator stretches or rotates a given vector. Therefore you can represent each generator by a matrix. This calculation is done using the max-plus semiring. We use this semiring due to the fact that it helps with computation and notation. 
+
+\begin{definition}
+The max-semiring $(\mathbb{R},\text{max},+)$ has the maximum function $\text{max}(a,b)$ as the additive operation, and the addition operation $a+b$ as the multiplicative operation. It is a semiring due to the fact that there is not an additive inverse.
+\end{definition}
+
+\noindent Here is an example that shows how to represent a generator as a matrix: For $n=3$, the possible generators are $\sigma_1^+, \sigma_1^-, \sigma_2^+, \sigma_2^-$. Also the input vector comes from the Dynnikov coordinate space: $x \in \mathbb{R}^{2n-4} = \mathbb{R}^{2(3)-4}$. For the generator $\sigma_1^+ (a,b)=(a',b')$ where 
+\\ \\
+$[a+b]=\text{max}(a,b), [ab]=a+b, [a/b]=a-b, \text{ and } [1]=0. \\ \\ a'=[\frac{ab}{a+1+b}], b'=[\frac{1+b}{a}],   \\ \text{ If } 0<a<b , \text{then } \sigma_1^+ (a,b)=
 \begin{bmatrix}
 1 & 0\\
 -1 & 1
-\end{bmatrix} 
-\text{when }0<a<b $.
-Notice how the input vector is in $\mathbb{R}^2$ such that $j=\begin{bmatrix} a\\b \end{bmatrix} \in \mathbb{R}^{2n-4} = \mathbb{R}^{2(3)-4}$.
-
-Since we can represent generators as matrices we can use this to our advantage due to the fact that computers work with arrays and matrices well! This is a proposed alternative method to representing braids as permutation groups. Using results in linear algebra perhaps a more efficient system may be worth trying. 
+\end{bmatrix} $. We want to compare the $a$ and $b$ and obtain different matrices for several cases. Since we can represent generators as matrices we can use this to our advantage due to the fact that computers work with arrays and matrices well! This is a proposed alternative method to representing braids as permutation groups. Using results in linear algebra perhaps a more efficient system may be worth trying. 
 
 
 \begin{thebibliography}{9}
