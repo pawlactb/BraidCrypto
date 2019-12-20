@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 DEC 2019 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 DEC 2019 23:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -167,18 +167,18 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 (./braidcryptosystem.aux)
 \openout1 = `braidcryptosystem.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -188,15 +188,15 @@ LaTeX Font Info:    ... okay on input line 25.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* h-part:(L,W,R)=(126.47249pt, 361.35002pt, 126.47249pt)
+* v-part:(T,H,B)=(126.47249pt, 542.02501pt, 126.47249pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=361.35002pt
+* \textheight=542.02501pt
+* \oddsidemargin=54.2025pt
+* \evensidemargin=54.2025pt
+* \topmargin=17.2025pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -271,12 +271,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -287,52 +287,79 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./Pictures/gen_pos_neg.png Graphic file (type png)
 
 <use ./Pictures/gen_pos_neg.png>
-Package pdftex.def Info: ./Pictures/gen_pos_neg.png used on input line 45.
-(pdftex.def)             Requested size: 93.94957pt x 70.43814pt.
+Package pdftex.def Info: ./Pictures/gen_pos_neg.png used on input line 46.
+(pdftex.def)             Requested size: 72.26889pt x 54.1827pt.
 
 <./Pictures/example_braid.png, id=12, 562.2606pt x 421.575pt>
 File: ./Pictures/example_braid.png Graphic file (type png)
 
 <use ./Pictures/example_braid.png>
-Package pdftex.def Info: ./Pictures/example_braid.png used on input line 54.
-(pdftex.def)             Requested size: 93.94957pt x 70.43814pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
+Package pdftex.def Info: ./Pictures/example_braid.png used on input line 57.
+(pdftex.def)             Requested size: 72.26889pt x 54.1827pt.
+ [2 <./Pictures/gen_pos_neg.png (PNG copy)> <./Pictures/example_braid.png (PNG 
+copy)>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
- [2 <./Pictures/gen_pos_neg.png (PNG copy)> <./Pictures/example_braid.png (PNG 
-copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+
+Overfull \hbox (94.51207pt too wide) in paragraph at lines 81--82
+[][] 
+ []
+
+
+Overfull \hbox (10.35455pt too wide) in paragraph at lines 87--88
+\OT1/cmr/bx/n/10 Definition 3.1. $\OML/cmm/m/it/10 G \OMS/cmsy/m/n/10 ^^@ []\OM
+L/cmm/m/it/10 a; x; y \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 G:[]y \OT1/cmr/m/n/10
+ = \OML/cmm/m/it/10 axa[]; []y[]conjugate[]x[]a:$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-
+Overfull \hbox (24.99683pt too wide) in paragraph at lines 99--102
+[]\OML/cmm/m/it/10 x; y[]; y[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 B[][]y[] \OT
+1/cmr/m/n/10 = \OML/cmm/m/it/10 axa[][]y[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 b
+xb[][]a \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 LB[][]b \OMS/cmsy/m/n/10 2
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 139--146
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 
  []
 
-[4] (./braidcryptosystem.aux) ) 
+[4]
+Overfull \hbox (2.67905pt too wide) in paragraph at lines 142--143
+\OT1/cmr/bx/n/10 Definition 7.1. \OT1/cmr/m/n/10 The max-semiring $(\U/msb/m/n/
+10 R\OML/cmm/m/it/10 ; []; \OT1/cmr/m/n/10 +)$ has the max-i-mum func-tion $[](
+\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 )$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+[5] (./braidcryptosystem.aux) ) 
 Here is how much of TeX's memory you used:
- 2987 strings out of 493014
- 40530 string characters out of 6133351
- 110687 words of memory out of 5000000
- 6474 multiletter control sequences out of 15000+600000
+ 2988 strings out of 493014
+ 40548 string characters out of 6133351
+ 109724 words of memory out of 5000000
+ 6475 multiletter control sequences out of 15000+600000
  13635 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,8n,32p,744b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,32p,744b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
@@ -349,10 +376,10 @@ m/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
 mti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
-Output written on braidcryptosystem.pdf (4 pages, 208159 bytes).
+Output written on braidcryptosystem.pdf (5 pages, 209894 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
