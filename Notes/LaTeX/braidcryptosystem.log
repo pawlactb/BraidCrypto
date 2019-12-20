@@ -1,50 +1,49 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.12.10)  20 DEC 2019 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 DEC 2019 15:19
 entering extended mode
-**./braidcryptosystem.tex
-(braidcryptosystem.tex
-LaTeX2e <2019-10-01>
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**braidcryptosystem.tex
+(./braidcryptosystem.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
-sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
-y"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
-ty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.
-sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
-sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
 \Gm@bindingoffset=\dimen103
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
@@ -54,59 +53,51 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
-cfg"))
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
-y"
-Package: amsmath 2019/04/01 v2.17c AMS math features
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
-y"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
-"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen111
 ))
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
-"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen112
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
-"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count91
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count92
-\leftroot@=\count93
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count94
-\DOTSCASE@=\count95
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
 \big@size=\dimen113
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
 \tag@help=\toks17
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
 \andhelp@=\toks18
 \eqnshift@=\dimen114
 \alignsep@=\dimen115
@@ -118,24 +109,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2855.
-LaTeX Info: Redefining \] on input line 2856.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
-ty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
-sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
-Package: amsthm 2017/10/31 v2.20.4
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks21
 \thm@bodyfont=\toks22
 \thm@headfont=\toks23
@@ -146,46 +134,63 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip48
 \dth@everypar=\toks26
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
-sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
-sty"
-Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
-ics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
-x.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-\c@definition=\count103
- (braidcryptosystem.aux)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/listing/listing.sty
+Package: listing 1999/05/25
+
+Package `listing', V1.2, <1999/05/25>
+\c@listing=\count103
+)
+\c@definition=\count104
+ (./braidcryptosystem.aux
+
+LaTeX Warning: Label `fig:graph' multiply defined.
+
+
+LaTeX Warning: Label `fig:graph' multiply defined.
+
+)
 \openout1 = `braidcryptosystem.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -221,186 +226,220 @@ LaTeX Font Info:    ... okay on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
-df.mkii"
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
+\scratchcounter=\count105
 \scratchdimen=\dimen122
-\scratchbox=\box29
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\scratchbox=\box28
+\nofMPsegments=\count106
+\nofMParguments=\count107
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count107
+\MPscratchCnt=\count108
 \MPscratchDim=\dimen123
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
-rr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
-y"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
-ekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
-.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
-.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
-ys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
-s.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
-x.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-))))
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexc
-mds.sty"
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
-("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/bklee/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 73--98
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<./Pictures/gen_pos_neg.png, id=11, 401.5pt x 263.98625pt>
+File: ./Pictures/gen_pos_neg.png Graphic file (type png)
+
+<use ./Pictures/gen_pos_neg.png>
+Package pdftex.def Info: ./Pictures/gen_pos_neg.png used on input line 47.
+(pdftex.def)             Requested size: 72.26889pt x 47.51547pt.
+
+<./Pictures/crisscross_1.png, id=13, 562.2606pt x 421.575pt>
+File: ./Pictures/crisscross_1.png Graphic file (type png)
+
+<use ./Pictures/crisscross_1.png>
+Package pdftex.def Info: ./Pictures/crisscross_1.png used on input line 55.
+(pdftex.def)             Requested size: 72.26889pt x 54.1827pt.
+
+<./Pictures/crisscross_2.png, id=14, 562.2606pt x 421.575pt>
+File: ./Pictures/crisscross_2.png Graphic file (type png)
+
+<use ./Pictures/crisscross_2.png>
+Package pdftex.def Info: ./Pictures/crisscross_2.png used on input line 56.
+(pdftex.def)             Requested size: 72.26889pt x 54.1827pt.
+
+<./Pictures/commute_1.png, id=15, 562.2606pt x 421.575pt>
+File: ./Pictures/commute_1.png Graphic file (type png)
+
+<use ./Pictures/commute_1.png>
+Package pdftex.def Info: ./Pictures/commute_1.png used on input line 62.
+(pdftex.def)             Requested size: 72.26889pt x 54.1827pt.
+
+<./Pictures/commute_2.png, id=16, 562.2606pt x 421.575pt>
+File: ./Pictures/commute_2.png Graphic file (type png)
+
+<use ./Pictures/commute_2.png>
+Package pdftex.def Info: ./Pictures/commute_2.png used on input line 63.
+(pdftex.def)             Requested size: 72.26889pt x 54.1827pt.
+ [2 <./Pictures/gen_pos_neg.png> <./Pictures/crisscross_1.png (PNG copy)> <./Pi
+ctures/crisscross_2.png (PNG copy)> <./Pictures/commute_1.png (PNG copy)> <./Pi
+ctures/commute_2.png (PNG copy)>]
+<./Pictures/example_braid.png, id=28, 206.7725pt x 314.17375pt>
+File: ./Pictures/example_braid.png Graphic file (type png)
+
+<use ./Pictures/example_braid.png>
+Package pdftex.def Info: ./Pictures/example_braid.png used on input line 72.
+(pdftex.def)             Requested size: 72.26889pt x 109.80905pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--98
+Underfull \hbox (badness 10000) in paragraph at lines 88--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--98
+Underfull \hbox (badness 10000) in paragraph at lines 88--113
 
  []
 
-[2]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-04.
- ("C:\Users\bklee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+[3 <./Pictures/example_braid.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 119.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
 
-Overfull \hbox (94.51207pt too wide) in paragraph at lines 106--107
+Overfull \hbox (94.51207pt too wide) in paragraph at lines 121--122
 [][] 
  []
 
 
-Overfull \hbox (10.35455pt too wide) in paragraph at lines 112--113
-\OT1/cmr/bx/n/10 Definition 3.1. $\OML/cmm/m/it/10 G \OMS/cmsy/m/n/10   []\OML/
-cmm/m/it/10 a; x; y \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 G:[]y \OT1/cmr/m/n/10 =
- \OML/cmm/m/it/10 axa[]; []y[]conjugate[]x[]a:$ 
+Overfull \hbox (10.35455pt too wide) in paragraph at lines 127--128
+\OT1/cmr/bx/n/10 Definition 3.1. $\OML/cmm/m/it/10 G \OMS/cmsy/m/n/10 ^^@ []\OM
+L/cmm/m/it/10 a; x; y \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 G:[]y \OT1/cmr/m/n/10
+ = \OML/cmm/m/it/10 axa[]; []y[]conjugate[]x[]a:$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 124--127
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
 
 
-Overfull \hbox (24.99683pt too wide) in paragraph at lines 124--127
+Overfull \hbox (24.99683pt too wide) in paragraph at lines 139--142
 []\OML/cmm/m/it/10 x; y[]; y[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 B[][]y[] \OT
 1/cmr/m/n/10 = \OML/cmm/m/it/10 axa[][]y[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 b
 xb[][]a \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 LB[][]b \OMS/cmsy/m/n/10 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--143
+Underfull \hbox (badness 10000) in paragraph at lines 155--158
 
  []
 
-[4]
-Overfull \hbox (2.67905pt too wide) in paragraph at lines 167--168
+[5]
+Overfull \hbox (2.67905pt too wide) in paragraph at lines 183--184
 \OT1/cmr/bx/n/10 Definition 7.1. \OT1/cmr/m/n/10 The max-semiring $(\U/msb/m/n/
 10 R\OML/cmm/m/it/10 ; []; \OT1/cmr/m/n/10 +)$ has the max-i-mum func-tion $[](
 \OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--177
+Underfull \hbox (badness 10000) in paragraph at lines 186--193
 
  []
 
-[5] [6] (braidcryptosystem.aux) ) 
+[6] [7] (./braidcryptosystem.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3217 strings out of 492452
- 43929 string characters out of 3120063
- 118262 words of memory out of 3000000
- 7524 multiletter control sequences out of 15000+200000
- 13635 words of font info for 52 fonts, out of 3000000 for 9000
+ 3036 strings out of 493014
+ 41549 string characters out of 6133351
+ 110994 words of memory out of 5000000
+ 6515 multiletter control sequences out of 15000+600000
+ 13635 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,34p,746b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/bklee/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bklee/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bklee/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/User
-s/bklee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10
-.pfb><C:/Users/bklee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><C:/Users/bklee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb><C:/Users/bklee/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bklee/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bklee/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bkl
-ee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
-:/Users/bklee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Users/bklee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><C:/Users/bklee/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bklee/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/bklee/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on braidcryptosystem.pdf (6 pages, 196000 bytes).
+ 37i,8n,32p,1613b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on braidcryptosystem.pdf (7 pages, 285745 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

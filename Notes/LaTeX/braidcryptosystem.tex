@@ -44,7 +44,7 @@ $a,b \in B_n: \ ab\neq ba$. Note that for $n$ strands there are $n-1$ generators
 
 \begin{figure}[hbp!]
 \centering
-  %\includegraphics[width=0.2\linewidth]{./Pictures/gen_pos_neg.png}
+  \includegraphics[width=0.2\linewidth]{./Pictures/gen_pos_neg.png}
   \caption{$\sigma_i^+$,$\sigma_i^-$}\label{fig:graph}
 \end{figure}
 
@@ -64,12 +64,13 @@ The first rule for braid groups written in the definition states that you are al
   \caption{$\sigma_1\sigma_3=\sigma_3\sigma_1\ \textrm{if}\ |3-1|>1$}\label{fig:graph}
 \end{figure}
 
+\pagebreak
 For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^-$ is the following:
 	
-	\begin{figure}[hbp!]
+\begin{figure}[hbp!]
 \centering
-  %\includegraphics[width=0.2\linewidth]{./Pictures/example_braid.png}
-\end{figure}
+  \includegraphics[width=0.2\linewidth]{./Pictures/example_braid.png}
+\end{figure} 
 	
 	
 \section{Braids as Permutations}
@@ -80,13 +81,13 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 	
 	\begin{definition}	
 	For any $w \in B_n$ $\exists$ a unique representation called the left canonical form.
-	\\$w = \Delta^u A_1 A_2 ... A_l, u \in Z', A \in \Sigma_n \backslash \{ e, \Delta \} $
+	\\$w = \Delta^p A_1 A_2 ... A_l, p \in Z', A \in \Sigma_n \backslash \{ e, \Delta \} $
 	$\text{where } A_i A_{i+1} \text{is left weighted for } 1 \leq i \leq l - 1.$
 	\end{definition}
 	
-	The braids for the crypto system are all in left canonical form for the remainder of the paper. To implement this in a cryptosystem we need a fast algorithm to compute the left canonical form of any braid group. The algorithm for finding the left canonical form is similar to the bubble sort algorithm as its complexities are $\mathcal{O}(l^2 n log{}n)$ and $\mathcal{O}(l^2 n)$ in the Artin and band-generator presentations, respectively. The difference between the two is found in the complexity of the meet operation. The algorithm for left canonical form is as follows:
+	The braids for the crypto system are all in left canonical form for the remainder of the paper. To implement this in a cryptosystem we need a fast algorithm to compute the left canonical form of any braid group. The security parameters for a braid cryptosystem is $(p,n)$ where $p$ is the length of the canonical factor and $n$ is the number of strands. $l$ is the list of canonical factors. The algorithm for finding the left canonical form is similar to the bubble sort algorithm as its complexities are $\mathcal{O}(l^2 n log{}n)$ and $\mathcal{O}(l^2 n)$ in the Artin and band-generator presentations, respectively. The difference between the two is found in the complexity of the meet operation. The algorithm for left canonical form is as follows:
 	\\
-	\\ Algorithim: Convert a braid into the left canonical form
+	\\  \textbf{Algorithm}: Convert a braid into the left canonical form
 	\\
 	\\ \indent Input: A braid representation $\beta = (p, (A_i))$
 	\\ \indent Output: The left canonical form of $\beta$
