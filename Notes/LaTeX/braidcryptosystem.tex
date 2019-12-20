@@ -29,7 +29,7 @@
 	\maketitle
 
 	\begin{abstract}
-	\textbf{Write abstract after paper is done.}
+	We analyze the inner workings of a braid group based cryptosystem. We look at how to represent braids as permutations as well as the hardness of the conjugacy search problem. A Diffie-Hellman version of the cryptosystem is presented. Discussion of representing braids as matrices and generating random braids through brownian motion is suggested for future direction. 
 	\end{abstract}
 	\newpage
 	\section{Braids}
@@ -61,7 +61,7 @@ The first rule for braid groups written in the definition states that you are al
 \centering
   \includegraphics[width=0.2\linewidth]{./Pictures/commute_1.png}
   \includegraphics[width=0.2\linewidth]{./Pictures/commute_2.png}
-  \caption{$\sigma_1\sigma_3=\sigma_3\sigma_1\ \textrm{if}\ |3-1|>1$}\label{fig:graph}
+  \caption{$\sigma_3\sigma_1=\sigma_1\sigma_3\ \textrm{if}\ |3-1|>1$}\label{fig:graph}
 \end{figure}
 
 \pagebreak
@@ -72,7 +72,8 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
   \includegraphics[width=0.2\linewidth]{./Pictures/example_braid.png}
 \end{figure} 
 	
-	
+Due to the rules of a braid group there is no way to represent a braid uniquely so we need to utilize permutations.
+
 \section{Braids as Permutations}
 	There is no unique way to write a braid as a concatenation of generators. There is no unique form because you can simply use the rules of the braid group to switch generators around. Therefore there is a connection defined between braid groups and permutation groups so that we can define a uniqueness. There exists a endomorphism:
 	$ \phi: B_n \rightarrow \Sigma_n$.
@@ -85,7 +86,7 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 	$\text{where } A_i A_{i+1} \text{is left weighted for } 1 \leq i \leq l - 1.$
 	\end{definition}
 	
-	The braids for the crypto system are all in left canonical form for the remainder of the paper. To implement this in a cryptosystem we need a fast algorithm to compute the left canonical form of any braid group. The security parameters for a braid cryptosystem is $(p,n)$ where $p$ is the length of the canonical factor and $n$ is the number of strands. $l$ is the list of canonical factors. The algorithm for finding the left canonical form is similar to the bubble sort algorithm as its complexities are $\mathcal{O}(l^2 n log{}n)$ and $\mathcal{O}(l^2 n)$ in the Artin and band-generator presentations, respectively. The difference between the two is found in the complexity of the meet operation. The algorithm for left canonical form is as follows:
+	The braids for the crypto system are all in left canonical form for the remainder of the paper. To implement this in a cryptosystem we need a fast algorithm to compute the left canonical form of any braid group. The security parameters for a braid cryptosystem is $(p,n)$ where $p$ is the length of the canonical factor and $n$ is the number of strands. $l$ is the length of the list of distinct canonical factors, $A_i$. The algorithm for finding the left canonical form is similar to the bubble sort algorithm as its complexities are $\mathcal{O}(l^2 n log{}n)$ and $\mathcal{O}(l^2 n)$ in the Artin and band-generator presentations, respectively. The difference between the two is found in the complexity of the meet operation. The algorithm for left canonical form is as follows:
 	\\
 	\\  \textbf{Algorithm}: Convert a braid into the left canonical form
 	\\
@@ -97,14 +98,14 @@ For example the braid $b \in B_3: \ b=\sigma_2^+ \sigma_1^+ \sigma_2^- \sigma_1^
 	\\ \indent while ($i < \ell$)
 	\\ \indent \indent $t \leftarrow \ell$
 	\\ \indent  \indent for $ j \leftarrow \ell - 1$ to $i$ do begin:
-	\\ \indent \indent \indent B $\leftarrow$ $(DA_j^{-1})$ $A_j+1$
+	\\ \indent \indent \indent B $\leftarrow$ $(\Delta A_j^{-1})$ $A_j+1$
 	\\ \indent \indent \indent if (B is nontrivial) then begin
 	\\ \indent \indent \indent \indent $t \leftarrow j$; $A_j \leftarrow A_j B; A_j+1 \leftarrow B^{-1} A_j+1$
 	\\\indent \indent \indent end
 	\\\indent \indent end
 	\\ \indent $i \leftarrow t + 1$;
 	\\ \indent end
-	\\ \indent while ($\ell > 0) \land (A_1 = D)$ do begin:
+	\\ \indent while ($\ell > 0) \land (A_1 = \Delta)$ do begin:
 	\\  \indent \indent Remove $A_1$ from $\beta$; $\ell \leftarrow \ell -1$;$p \leftarrow p +1$;
 	\\ \indent end
 	\\ \indent while ($\ell > 0) \land (A_\ell$ is trivial) do begin:
@@ -142,9 +143,6 @@ We know use the fact by definition of a braid group that generators commute if a
 
 This takes advantage of the fact that we commute $a$ and $b$ which results in the following: $abxb^{-1}a^{-1}=baxa^{-1}b^{-1}$ so both Alice and Bob can decode the message. This problem is used for the key agreement between Alice and Bob.
 
-\section{Background Info and Literature}
-\textbf{Include information on what has been done. Talk about state of the art new ideas in braid group cryptography.}
-
 \section{Braid Diffie-Hellman Key Agreement}
 First we will discuss the traditional Diffie-Hellman protocol on El-Gamal then look at the key agreement for the braid version Diffie-Hellman. For the traditional Diffie-Hellman agreement the secret keys are $(a,b,g^{ab} \text{mod }p=g^{ab} \text{mod }p)$, and the public keys are $(p,g,g^a \text{mod }p,g^b \text{mod }p)$. 
 
@@ -172,8 +170,8 @@ $ay_2a^{-1}=a(bxb^{-1})a^{-1}=b(axa^{-1})b^{-1}=by_1b^{-1}$. This implies that A
 \end{centering}
 \end{enumerate}
 
-\section{Algorithm Analysis}
-
+\section{Background Info}
+Emil Artin first introduced the braid group in 1925. Braid group cryptosystems were introduced fairly recently in 2004. There existed group based cryptosystems prior and the braid group is significant due to the fact that it is non commutative. RSA and El Gamal all depend on commutativity since they stem from number theory. One of the first noncommutative group based cryptosystems was the braid group cryptosystem. There are several open problems for noncommutative cryptosystems. What is the most appropriate group for noncommutative cryptography? Should the groups be finite or infinite? Braid groups are infinite. Does there exist a quantum algorithm to solve the conjugacy problem faster?
 
 \section{Future Direction and New Ideas}
 
@@ -229,6 +227,10 @@ Jae Choon Cha, Ki Hyoung Ko, Sang Jin Lee, Jung Hee Cheon, Jae Woo Han.
 \bibitem{braidlab}
 Jean-Luc Thiffeault, Marko Budisic.
 \textit{Braidlab: A Software Package for Braids and Loops}.
+
+\bibitem{noncommutative}
+Benjamin Fine, Maggie Habeeb. 
+\textit{Aspects of Nonabelian Group Based Cryptography: A Survey and Open Problems}.
 
 \end{thebibliography}
 
